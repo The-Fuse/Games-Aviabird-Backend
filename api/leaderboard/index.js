@@ -14,4 +14,4 @@ router.route('/:id')
     .put(updateLeaderboard)
     .delete(deleteLeaderboard);
 
-module.exports = router;    
+module.exports = router; 

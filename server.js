@@ -11,17 +11,21 @@ connectDB();
 
 // Routes files
 const leaderboard = require('./api/leaderboard')
+const guessimage = require('./api/games/guessimage')
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 
-// Mount routers
-app.use('/api/v1/leaderbaord', leaderboard)
-
 // Enable CORS
 app.use(cors());
+
+// Mount routers
+app.use('/api/v1/leaderbaord', leaderboard)
+app.use('/api/v1/guessimage', guessimage)
+
+// Enable CORS
 
 
 
