@@ -23,6 +23,8 @@ app.use('/api/v1/leaderbaord', leaderboard)
 // Enable CORS
 app.use(cors());
 
+
+
 app.listen(PORT, () => {
     console.log(`App listening in ${process.env.NODE_ENV} mode on port: ${PORT}`);
 });

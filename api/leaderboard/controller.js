@@ -6,6 +6,7 @@ const Leaderboard = require('./model');
 
 exports.getLeaderboards = async (req,res,next) => {
     const leaderboardata = await Leaderboard.find();
+    res.header("Access-Control-Allow-Origin", "*")
     res.status(200).json({
         success: true,
         count: leaderboardata.length,
