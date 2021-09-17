@@ -10,7 +10,7 @@ const GuessimageSchema = new mongoose.Schema({
             type: String
         },
         id: {
-            type: String
+            type: Number
         },
         _id: false
     }]
