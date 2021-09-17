@@ -9,6 +9,9 @@ const GuessimageSchema = new mongoose.Schema({
         word: {
             type: String
         },
+        id: {
+            type: String
+        },
         _id: false
     }]
 

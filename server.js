@@ -25,7 +25,6 @@ app.use(cors());
 app.use('/api/v1/leaderbaord', leaderboard)
 app.use('/api/v1/guessimage', guessimage)
 
-// Enable CORS
 
 
 
