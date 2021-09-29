@@ -9,14 +9,14 @@ const LeaderboardSchema = new mongoose.Schema({
         username: {
             type: String
         },
+        email: {
+            type: String
+        },
         points: {
             type: Number
         },
         _id: false
     }],
-    games: {
-        type: [String]
-    }
 
 });
 
