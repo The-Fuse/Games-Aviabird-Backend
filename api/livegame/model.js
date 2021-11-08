@@ -14,7 +14,7 @@ const gameSchema = mongoose.Schema({
     },
     noOfPlayers: {
         type: Number,
-        default: 0
+        default: 1
     },
     url: {
         type: String
